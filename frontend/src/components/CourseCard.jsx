@@ -19,7 +19,7 @@ const CourseCard = ({ course }) => {
          </div>
 
          <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
-            <button className="text-indigo-600 font-medium text-sm hover:text-indigo-800 flex items-center">
+            <button className="text-indigo-600 font-medium text-sm hover:text-indigo-800 flex items-center cursor-pointer">
                Voir le cours <span className="ml-1">→</span>
             </button>
          </div>
