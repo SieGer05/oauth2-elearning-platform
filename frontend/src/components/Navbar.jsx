@@ -4,7 +4,7 @@ const Navbar = ({ client }) => {
   const isAdmin = client.hasRealmRole("ROLE_ADMIN");
 
   return (
-    <nav className="bg-linear-to-r from-indigo-700 to-purple-800 text-white shadow-lg">
+    <nav className="bg-blue-800 text-white shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         
          <div className="flex items-center space-x-2">
@@ -24,7 +24,7 @@ const Navbar = ({ client }) => {
 
             <button
                onClick={() => client.logout()}
-               className="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition duration-200 border border-white/20 text-sm font-medium"
+               className="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition duration-200 border border-white/20 text-sm font-medium cursor-pointer"
             >
                Se déconnecter
             </button>
