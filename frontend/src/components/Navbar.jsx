@@ -1,3 +1,4 @@
+import { logo } from "../assets";
 
 const Navbar = ({ client }) => {
   const username = client.tokenParsed?.preferred_username || "Utilisateur";
@@ -7,8 +8,12 @@ const Navbar = ({ client }) => {
     <nav className="bg-blue-800 text-white shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         
-         <div className="flex items-center space-x-2">
-            <span className="text-2xl">🎓</span>
+         <div className="flex items-center space-x-3">
+            <img 
+               src={logo} 
+               alt="Logo E-Learning" 
+               className="h-10 w-auto object-contain" 
+            />
             <h1 className="text-xl font-bold tracking-wide">E-Learning Secure</h1>
          </div>
 
